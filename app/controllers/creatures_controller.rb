@@ -4,7 +4,7 @@ class CreaturesController < ApplicationController
 		render :index
 	end
 	def new
-		#why isnt @creatures = needed here?
+		@creature = Creature.new
 		render :new
 	end	
 	def create
